@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Image Version</title>
+
+  <style>
+  
+  :root {
+    --pink-bg: #ff9ecf;
+    --blue-box: #7dc9ff;
+    --brown-text: #8b5e3c;
+    --hover-yellow: #fff7a8;
+    --radius: 18px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: var(--pink-bg);
+    font-family: "Poppins", sans-serif;
+    color: var(--brown-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  header {
+    margin-top: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  /* BLUE SECTION BOXES */
+  .section {
+    width: 90%;
+    max-width: 950px;
+    background: var(--blue-box);
+    border-radius: var(--radius);
+    border: 2px solid var(--brown-text);
+    margin: 3rem 0;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    min-height: 260px;
+  }
+
+  .section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  /* IMAGE SETTINGS */
+  .image-container img {
+    width: 240px;
+    height: auto;
+    cursor: pointer;
+    border-radius: var(--radius);
+    background: transparent;
+    transition: all 0.25s ease;
+    filter: drop-shadow(0 6px 10px rgba(0,0,0,0.15));
+  }
+
+  .image-container img:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 10px 16px rgba(0,0,0,0.25));
+  }
+
+  /* TEXT AREA */
+  .text-area {
+    flex: 1;
+    margin-left: 2rem;
+  }
+
+  .text-area h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .text-area p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  /* BUTTON */
+  .small-btn {
+    background: var(--brown-text);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.25s ease;
+  }
+
+  .small-btn:hover {
+    background: var(--hover-yellow);
+    color: var(--brown-text);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+  }
+
+  /* DIVIDER */
+  .divider {
+    width: 80%;
+    height: 2px;
+    background: var(--brown-text);
+    opacity: 0.5;
+    border-radius: 2px;
+  }
+
+  /* BOTTOM TEXT SECTION */
+  .bottom-section {
+    width: 90%;
+    max-width: 950px;
+    background: var(--blue-box);
+    border-radius: var(--radius);
+    border: 2px solid var(--brown-text);
+    padding: 2rem;
+    margin: 3rem 0;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.25s ease;
+  }
+
+  .bottom-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  }
+
+  .bottom-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  footer {
+    margin: 40px 0;
+    font-size: 0.9rem;
+  }
+
+  /* MOBILE */
+  @media (max-width: 750px) {
+    .section {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .text-area {
+      margin-left: 0;
+      margin-top: 1.5rem;
+    }
+
+    .image-container img {
+      width: 180px;
+    }
+  }
+
+  </style>
+
+</head>
+<body>
+
+<header>Stitch'n Stuff</header>
+
+<!-- SECTION 1 -->
+<div class="section">
+  <div class="image-container">
+    <img src="bearsns.png" alt="Section 1" onclick="window.location.href='page1.html'">
+  </div>
+
+  <div class="text-area">
+    <h2>Section 1 Title</h2>
+    <h2><p>Our Shop</p></h2>
+    <button class="small-btn" onclick="window.location.href='shop.html'">Shop</button>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- SECTION 2 -->
+<div class="section">
+  <div class="image-container">
+    <img src="mousesns.png" alt="Section 2" onclick="window.location.href='.html'">
+  </div>
+
+  <div class="text-area">
+    <h2>Section 2 Title</h2>
+    <h2><p>Contact Page</p></h2>
+    <button class="small-btn" onclick="window.location.href='Contact_Us.html'">Contact Us</button>
+  </div>
+</div>
+
+<h3>_________________________________________________________________________________________________________________________________________________</h3>
+
+<!-- NEW BOTTOM SECTION -->
+<div class="bottom-section">
+  <h1><p>Welcome to Stitch n’ Stuff! 🧸</p></h1>
+  <h2><p>We are a trio in Transition Year working on a small business.</p></h2>
+  <h2><p>We make handmade crochet bears unique to each individual by giving them their own distinctive style. 💝</h2></p>
+  <h2><p>Our goal is to provide each customer of their needs and enjoy their homemade crochet😁</p></h2>
+   <button class="small-btn" onclick="window.location.href='test.html'">About Us</button>
+</div>
+
+<footer><h2>© 2025 | Made entirely by Marius</h2></footer>
+
+</body>
+</html>
